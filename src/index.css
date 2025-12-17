@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+html {
+  font-family: 'Manrope', sans-serif;
+}
+:root {
+  --neon: rgb(238, 240, 240);
+  --header-height: 72px;
+}
+
+.text-neon {
+  color: var(--neon);
+  text-shadow: 0 0 5px var(--neon), 0 0 10px var(--neon), 0 0 20px var(--neon);
+}
+
+.bg-glass {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+.hero-line {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255,255,255,0.15),
+    transparent
+  );
+  animation: lineMove 6s ease-in-out infinite;
+}
+
+@keyframes lineMove {
+  0% {
+    transform: translateY(-20%);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(20%);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-20%);
+    opacity: 0.2;
+  }
+}
+.hero-btn {
+  padding: 14px 36px;
+  border-radius: 999px;
+  font-size: 14px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.hero-btn.primary {
+  background: rgba(255,255,255,0.9);
+  color: black;
+}
+
+.hero-btn.primary:hover {
+  box-shadow: 0 0 30px rgba(255,255,255,0.4);
+  transform: translateY(-2px);
+}
+
+.hero-btn.secondary {
+  border: 1px solid rgba(255,255,255,0.4);
+  color: white;
+}
+
+.hero-btn.secondary:hover {
+  background: rgba(255,255,255,0.08);
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  opacity: 1;
+  transform: translateY(-3px);
+}
