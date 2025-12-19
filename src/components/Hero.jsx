@@ -115,7 +115,7 @@ const Hero = () => {
 
   {/* Download Resume */}
   <a
-    href="/resume.pdf" // place your resume in the public folder
+    href="/Yasmin_Full-Stack_Developer.pdf" 
     download
     className="px-8 py-4 bg-white/5 text-white rounded-full flex items-center gap-2 hover:bg-white/10 transition"
   >
